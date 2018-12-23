@@ -7,7 +7,6 @@ module.exports = mongoose.model(
     name: String,
     photourl: String,
     dept: String,
-    id: ObjectId
     passingyear: Number,
      batch: Number,
     priority: Number
