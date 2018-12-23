@@ -6,7 +6,7 @@ module.exports = mongoose.model(
   new Schema({
     event_name: String,
     category: String,
-    date: Date
-    // priority:
+    date: Date,
+    priority: Number
   })
 );

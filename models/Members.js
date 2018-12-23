@@ -7,9 +7,9 @@ module.exports = mongoose.model(
     name: String,
     photourl: String,
     dept: String,
-    // id:
-    passingyear: Number
-    // batch:
-    // priority:
+    id: ObjectId
+    passingyear: Number,
+     batch: Number,
+    priority: Number
   })
 );
