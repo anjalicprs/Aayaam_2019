@@ -1,7 +1,7 @@
 let mongoose = require("mongoose");
 
 const server = "localhost:27017";
-const database = "chakra";
+const database = "aayaamdb";
 
 module.exports.initDb = () => {
   mongoose.connect(

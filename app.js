@@ -1,4 +1,5 @@
 var express = require("express");
+var mongoose = require("mongoose");
 var path = require("path");
 var favicon = require("express-favicon");
 var logger = require("morgan");
@@ -14,6 +15,9 @@ var index = require("./routes/index");
 //var admin = require('./routes/admin');
 
 var app = express();
+
+let initDb = require("./config/mongoInit").initDb;
+initDb();
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
