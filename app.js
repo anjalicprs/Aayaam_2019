@@ -7,7 +7,7 @@ var cookieParser = require("cookie-parser");
 var bodyParser = require("body-parser");
 var bcrypt = require("bcryptjs");
 // var models = require('./models');
-var sequelize = require("sequelize");
+// var sequelize = require("sequelize");
 //var Admins = models.Admins;
 
 var index = require("./routes/index");
