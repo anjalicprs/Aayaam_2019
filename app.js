@@ -7,10 +7,14 @@ var cookieParser = require("cookie-parser");
 var bodyParser = require("body-parser");
 var bcrypt = require("bcryptjs");
 // var models = require('./models');
-var sequelize = require("sequelize");
+// var sequelize = require("sequelize");
 //var Admins = models.Admins;
 
 var index = require("./routes/index");
+var contact = require("./routes/contact");
+var events = require("./routes/events");
+var parivar = require("./routes/parivar");
+var blog = require("./routes/blog");
 //var register = require('./routes/register');
 //var admin = require('./routes/admin');
 
@@ -32,6 +36,10 @@ app.use(express.static(path.join(__dirname, "/public")));
 app.use(favicon(__dirname + "/public/images/favicon.png"));
 // routes
 app.use("/", index);
+app.use("/contact", contact);
+app.use("/events", events);
+app.use("/parivar", parivar);
+app.use("/blog", blog);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
